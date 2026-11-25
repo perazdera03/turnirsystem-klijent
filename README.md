@@ -1,38 +1,22 @@
-# TurnirSystemKlijent
+TurnirSystem (klijent)
 
-This template should help get you started developing with Vue 3 in Vite.
+Klijent aplikacije za organizaciju turnira, napisan u Vue 3 (Vite). Radi sa serverom iz posebnog repozitorijuma: LINK_KA_SERVERU
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+Šta je potrebno
+Node.js 22.18 ili noviji
+pokrenut server na http://localhost:5095 (vidi README servera)
+Pokretanje
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
+Otvori adresu koju ispiše Vite (obično http://localhost:5173). Zahtevi ka /api se automatski prosleđuju serveru (podešeno u vite.config.js).
 
-```sh
-npm run build
-```
+Šta može
+javni pregled turnira, grupa, tabela, kostura, rasporeda i statistike (bez prijave)
+admin (posle prijave): ekipe, turniri, prijava ekipa, grupe, mečevi, rezultati, termini, eliminacija
+tamna i svetla tema, latinica i ćirilica (dugmad u gornjem meniju)
+Struktura (src/)
+views/: stranice
+components/: delovi koji se ponavljaju (meni, prozor za brisanje, okviri za tabele i forme)
+utils/: prijava, poruke grešaka, tema, pismo
+router/: adrese stranica i zaštita za admina
