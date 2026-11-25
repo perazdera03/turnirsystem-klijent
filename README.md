@@ -1,6 +1,6 @@
 # TurnirSystem (klijent)
 
-Klijent aplikacije za organizaciju turnira, napisan u Vue 3 (Vite). Radi sa serverom iz posebnog repozitorijuma `turnirsystem-server`.
+Klijent aplikacije za organizaciju turnira, napisan u Vue 3 (Vite). Radi sa serverom iz posebnog repozitorijuma: [turnirsystem-server](https://github.com/perazdera03/turnirsystem-server).
 
 ## Šta je potrebno
 
